@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeNaniteAssemblies>  
-  <CodeNanitePath>D:\Custom Stencils\3rd Party Stencils\DevExpress\DevExtremeAspCore\DevExtremeAspCore\Assemblies</CodeNanitePath>  
-  
-  <AssemblyLoadPath>D:\Custom Stencils\3rd Party Stencils\DevExpress\DevExtremeAspCore\DevExtremeAspCore\Assemblies\ZeraSystems.DevExtremeAspCore.dll</AssemblyLoadPath>  
-
+  <AssemblyLoadPath>D:\CodeStencil\Custom Stencils\3rd Party Stencils\DevExpress\DevExtremeAspCore\build\ZeraSystems.DevExtremeAspCore.dll</AssemblyLoadPath>  
+  <AssemblyLoadPath>D:\CodeStencil\code-nanites\build\Debug\ZeraSystems.CodeNanite.Expansion.dll</AssemblyLoadPath>  
+  <AssemblyLoadPath>D:\CodeStencil\code-nanites\build\Debug\ZeraSystems.CodeNanite.Schema.dll</AssemblyLoadPath>  
+  <AssemblyLoadPath>D:\CodeStencil\code-nanites\build\Debug\ZeraSystems.CodeNanite.Cshtml.dll</AssemblyLoadPath>  
 </CodeNaniteAssemblies> 
