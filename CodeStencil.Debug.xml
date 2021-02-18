@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeNaniteAssemblies>  
+  <CodeNanitePath>D:\Custom Stencils\3rd Party Stencils\DevExpress\DevExtremeAspCore\DevExtremeAspCore\Assemblies</CodeNanitePath>  
+  
+  <AssemblyLoadPath>D:\Custom Stencils\3rd Party Stencils\DevExpress\DevExtremeAspCore\DevExtremeAspCore\Assemblies\ZeraSystems.DevExtremeAspCore.dll</AssemblyLoadPath>  
+
+</CodeNaniteAssemblies> 

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4868346-253C-41ED-91C4-9B46A60C7ACA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZeraSystems.DevExtremeAspCore</RootNamespace>
+    <AssemblyName>ZeraSystems.DevExtremeAspCore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\build\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColumnsAddFor.Functions.cs">
+      <DependentUpon>ColumnsAddFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General.cs" />
+    <Compile Include="GridConfig.Functions.cs">
+      <DependentUpon>GridConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HttpGet.cs" />
+    <Compile Include="HttpGet.Functions.cs">
+      <DependentUpon>HttpGet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HttpGetLookup.cs" />
+    <Compile Include="ColumnsAddFor.cs" />
+    <Compile Include="HttpGetLookup.Functions.cs">
+      <DependentUpon>HttpGetLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetail.cs" />
+    <Compile Include="MasterDetail.Functions.cs">
+      <DependentUpon>MasterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopulateModel.Functions.cs">
+      <DependentUpon>PopulateModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridConfig.cs" />
+    <Compile Include="TreeViewMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PopulateModel.cs" />
+    <Compile Include="TreeViewMenu.Functions.cs">
+      <DependentUpon>TreeViewMenu.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Humanizer.Core">
+      <Version>2.8.26</Version>
+    </PackageReference>
+    <PackageReference Include="ZeraSystems.CodeNanite.Cshtml">
+      <Version>1.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="ZeraSystems.CodeNanite.Expansion">
+      <Version>1.3.2.6</Version>
+    </PackageReference>
+    <PackageReference Include="ZeraSystems.CodeNanite.Schema">
+      <Version>1.3.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="ZeraSystems.CodeStencil.Contracts">
+      <Version>1.3.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <!--<ItemGroup>
+    <Content Include="logo64x64.png" />
+  </ItemGroup>-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)*.dll"  "$(SolutionDir)..\$(ProjectName)\Assemblies"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
